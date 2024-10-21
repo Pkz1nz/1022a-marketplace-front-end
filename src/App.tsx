@@ -13,8 +13,8 @@ type UsuarioType = {
   id: number,
   nome: string,
   email: string,
-  idade: number,
-  avatar: string
+  create_at: string,
+  update_at: string
 }
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
     <>
       <h1>{nome}</h1>
 
+      {/* Sessão de produtos */}
       <div className="produtos-container">
         <h2>Produtos</h2>
         {
@@ -58,6 +59,7 @@ function App() {
         }
       </div>
 
+      {/* Sessão de usuários */}
       <div className="usuarios-container">
         <h2>Usuários</h2>
         {
@@ -65,11 +67,10 @@ function App() {
             return (
               <div key={usuario.id} className="usuario-item">
                 <h3>{usuario.nome}</h3>
-                <div className='container-avatar'>
-                  <img src={usuario.avatar} alt="Avatar do usuário" />
-                </div>
-                <p>{usuario.email}</p>
-                <p>Idade: {usuario.idade}</p>
+                <p>ID: {usuario.id}</p>
+                <p>Email: {usuario.email}</p>
+                <p>Created At: {usuario.created_at}</p>
+                <p>Updated At: {usuario.updated_at}</p>
               </div>
             )
           })
