@@ -69,8 +69,8 @@ function App() {
                 <h3>{usuario.nome}</h3>
                 <p>ID: {usuario.id}</p>
                 <p>Email: {usuario.email}</p>
-                <p>Created At: {usuario.created_at}</p>
-                <p>Updated At: {usuario.updated_at}</p>
+                <p>Criado em: {usuario.created_at}</p>
+                <p>Atualizado em: {usuario.updated_at}</p>
               </div>
             )
           })
