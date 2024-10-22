@@ -13,8 +13,8 @@ type UsuarioType = {
   id: number,
   nome: string,
   email: string,
-  create_at: string,
-  update_at: string
+  created_at: string,
+  updated_at: string
 }
 
 function App() {
